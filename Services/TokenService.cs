@@ -23,6 +23,7 @@ namespace JwtDotNetCore.Services
 
         public string BuildToken(string id)
         {
+            // add claims here
             var claims = new[]
             {
                 new Claim("Id", id)
