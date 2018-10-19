@@ -16,7 +16,7 @@ namespace JwtDotNetCore.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult GetJwtWithIdClaim([FromBody] string id)
+        public IActionResult CreateJwtWithIdClaim([FromBody] string id)
         {
             var token = _tokenService.BuildToken(id);
 
